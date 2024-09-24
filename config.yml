@@ -68,7 +68,7 @@ gui:
   theme:
     # Border color of focused window
     activeBorderColor:
-      - '#ff00b7'
+      - '#ff0000'
       - bold
 
     # Border color of non-focused windows
