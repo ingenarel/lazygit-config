@@ -14,7 +14,7 @@ gui:
 
   # If true, capture mouse events.
   # When mouse events are captured, it's a little harder to select text: e.g. requiring you to hold the option key when on macOS.
-  # mouseEvents: true
+  mouseEvents: false
 
   # If true, do not show a warning when discarding changes in the staging view.
   # skipDiscardChangeWarning: false
@@ -65,15 +65,15 @@ gui:
 
   # Config relating to colors and styles.
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#color-attributes
-  # theme:
+  theme:
     # Border color of focused window
-    # activeBorderColor:
-    #   - green
-    #   - bold
+    activeBorderColor:
+      - '#ff00b7'
+      - bold
 
     # Border color of non-focused windows
-    # inactiveBorderColor:
-    #   - default
+    inactiveBorderColor:
+      - '#e600ff'
 
     # Border color of focused window when searching in that window
     # searchingActiveBorderColor:
@@ -115,7 +115,7 @@ gui:
 
     # Default text color
     # defaultFgColor:
-    #   - default
+      # - default
 
   # Config relating to the commit length indicator
   # commitLength:
@@ -193,16 +193,18 @@ gui:
   # filterMode: substring
 
   # Config relating to the spinner.
-  # spinner:
+  spinner:
     # The frames of the spinner animation.
-    # frames:
+    frames:
+      - ''
+      - ''
       # - '|'
       # - /
       # - '-'
       # - \
 
     # The "speed" of the spinner in milliseconds.
-    # rate: 50
+    rate: 100
 
   # Status panel view.
   # One of 'dashboard' (default) | 'allBranchesLog'
@@ -341,7 +343,7 @@ gui:
 # quitOnTopLevelReturn: false
 
 # Config relating to things outside of Lazygit like how files are opened, copying to clipboard, etc
-# os:
+os:
   # Command for editing a file. Should contain "{{filename}}".
   # edit: ""
 
@@ -358,7 +360,7 @@ gui:
 
   # A built-in preset that sets all of the above settings. Supported presets
   # are defined in the getPreset function in editor_presets.go.
-  # editPreset: ""
+  editPreset: "nvim"
 
   # Command for opening a file, as if the file is double-clicked. Should
   # contain "{{filename}}", but doesn't support "{{line}}".
