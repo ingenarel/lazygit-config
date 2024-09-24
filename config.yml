@@ -204,7 +204,7 @@ gui:
       # - \
 
     # The "speed" of the spinner in milliseconds.
-    rate: 100
+    rate: 500
 
   # Status panel view.
   # One of 'dashboard' (default) | 'allBranchesLog'
@@ -267,7 +267,7 @@ gui:
   # skipHookPrefix: WIP
 
   # If true, periodically fetch from remote
-  autoFetch: false
+  # autoFetch: true
 
   # If true, periodically refresh files and submodules
   # autoRefresh: true
